@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
+import { FiArrowDownCircle } from 'react-icons/fi';
 
 import { Container } from './styles';
 
@@ -16,7 +16,10 @@ const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
       <img src={Logo} alt="GoFinances" />
       <nav>
         {
-          // Todo
+          <Link to={`/import`} >
+            <FiArrowDownCircle size={20} />
+            <span>Importar</span>
+          </Link>
         }
       </nav>
     </header>

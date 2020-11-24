@@ -30,6 +30,10 @@ export const Container = styled.div<ContainerProps>`
         &:hover {
           opacity: 0.6;
         }
+
+        span {
+          margin-left: 5px;
+        }
       }
     }
   }
